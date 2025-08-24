@@ -62,8 +62,19 @@ Arguments:
 
 --jobs: Number of parallel processes (0 for serial). Default: cpu_count()-1
 ```
-How It Works:
+## How It Works:
 
 The script integrates |ζ(1/2 + it) M(1/2 + it)|^2 from T to 2T, where M is a mollifier polynomial. It compares the result to the predicted asymptotic main term (2/π² θ T (log T)²) and computes the ratio (should approach 1 for large T under RH assumptions).
 
 For high precision or large T, expect longer runtimes—use --jobs for speedup on multi-core systems.
+
+
+## Credits:
+
+- Built with insights from analytic number theory resources (e.g., Titchmarsh, Ivić).
+
+- Thanks to xAI for Grok assistance in development.
+
+- Thanks to OpenAI for ChatGPT assistance in development.
+
+If you find bugs or have suggestions, open an issue!
