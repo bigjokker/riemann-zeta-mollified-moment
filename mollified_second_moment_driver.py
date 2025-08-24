@@ -2,9 +2,8 @@
 # Parallel batch + Simpson/Gauss + CSV/JSON export + progress bar.
 
 import argparse
+import gmpy2
 import mpmath as mp
-import gmpy2  # Added for faster backend
-mp.backend = 'gmpy'  # Set mpmath to use gmpy2 for speed boost
 import time
 from multiprocessing import Pool, cpu_count
 from tqdm import tqdm
@@ -148,4 +147,5 @@ def main():
             json.dump(results, f, indent=2)
 
 if __name__ == "__main__":
+
     main()
